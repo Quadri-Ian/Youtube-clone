@@ -1,0 +1,862 @@
+<!doctype html>
+<div>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/de85057d8c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="bg-almost-black thin-scrollbar">
+        <nav class="">
+            <header class="fixed w-full top-0 z-10 lg:pl-20 bg-almost-black sm:pl-8 sm:pr-8 pb-2 px-2 lg:pr-8 pt-2 items-center" id="header">
+            <div class="flex justify-between sm:pl-[35px] lg:pl-2">
+                <div class="w-24 pt-2">
+                    <img src="Images/YouTube-White-Full-Color-Logo.wine.png" alt="">
+                </div>
+
+                <div class="hidden md:flex justify-center items-center text-white w-full text-center">
+                    <input
+                        id="searchBar"
+                        class="border border-neutral-600 bg-almost-black w-2/3 h-10 px-5 pr-16  rounded-full text-sm focus:outline-none"
+                        type="search" name="search" placeholder="Search">
+                    <button type="submit" class="mt- mr-4">
+                        <a class="ml-[-72px] border border-neutral-600 text-gray-300 bg-neutral-600 py-[9.5px] px-[27px] rounded-r-full"
+                            href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </button>
+                    <a class="rounded-full bg-stone-800 py-2 px-3 p-2 hover:bg-stone-700 hover:rounded-full duration-300" href="#">
+                        <img class="w-[12px]"
+                            src="Images/microphone.png" alt="">
+                        </a>
+                </div>
+                <!-- for phone screen -->
+                <div class="flex sm:hidden gap-x-6 text-white px-2 items-center">
+                    <div class="text-white"><a href="#"><i class="fa-solid fa-display"></i></a></div>
+                    <a href="#"><i class="fa-regular fa-bell"></i></a>
+                    <a class="" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="" href="#"><i
+                    class="navbar-burger bg-neutral-600 p-2 rounded-full fa-regular fa-user"></i></a>
+                </div>
+                <!-- for medium/large screen -->
+                <div class="hidden sm:flex gap-x-4 text-white px-2 items-center">
+                    <a class="lg:hidden" href="#"><i class="fa-solid fa-magnifying-glass p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i></a>
+                    <a class="bg-stone-800 py-2 px-3 lg:hidden p-2 hover:bg-stone-700 hover:rounded-full duration-300" href="#"><img class="w-[12px]"
+                            src="Images/microphone.png" alt=""></a>
+                    <div class="text-white p-2 hover:bg-stone-700 hover:rounded-full duration-300">
+                    <a href="#"><img class="w-6 lg:w-12" src="images/camera.png" alt="img"></a>
+                    </div>
+                    <a href="#"><i class="fa-regular fa-bell p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i></a>
+                    <a class="" href="#"><i
+                    class="right-navbar-burger bg-neutral-600 p-2 rounded-full fa-regular fa-user"></i></a>
+                </div>
+            </div>
+
+            <!-- slide bar -->
+            <div>
+                <div class="flex justify-between items-center gap-x-2 overflow-x-auto no-scrollbar 
+                text-white sm:pl-8 pt-5 px-2 lg:mr-8 lg:mr-20 text-sm font-bold text-white">
+
+                    <a href="#florence" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Florence</a>
+                    <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Psquare</a>
+                    <a href="#comedy" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Comedy</a>
+                    <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
+                    <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
+                    <a href="#florence" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Florence</a>
+                    <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300 grow">Javascript</a>
+                    <a href="#comedy" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Comedy</a>
+                    <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
+                    <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
+                    <a href="#florence" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Florence</a>
+                    <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Burna</a>
+                    <a href="#comedy" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Comedy</a>
+                    <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
+                    <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
+                    <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Burna</a>
+                    <a href="#comedy" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Comedy</a>
+                    <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
+                    <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
+                </div>
+            </div>
+
+            <div class="bg-almost-black">
+                <div class="hidden sm:flex flex-col gap-y-6 text-center fixed top-0 left-0 text-white pt-1 px-2">
+                    <div class="">
+                        <button id="hamburger" class="side-navbar-burger text-2xl">
+                            <i class="fa-solid fa-bars p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i>
+                        </button>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-y-6">
+                        <div>
+                            <a href="#"><i class="fa-solid fa-house"></i></a>
+                            <p class="text-sm">Home</p>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                            <p class="text-sm">Shorts</p>
+                        </div>
+                        <div>
+                            <a href="#"><i class="border rounded-full p-2 fa-solid fa-plus"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-photo-film"></i></a>
+                            <p class="text-sm">Subscriptions</p>
+                        </div>
+        
+                        <div>
+                            <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                            <p class="text-sm">Library</p>
+                        </div>
+                    </div>                
+            </header>
+
+        
+                </div>
+                <div class="side-navbar-menu relative z-50 hidden">
+                    <div class="side-navbar-backdrop fixed inset-0 bg-gray-800 opacity-25">
+                        
+                    </div>
+                    <nav
+                        
+                        class="fixed top-0 left-0 bottom-0 flex flex-col sm:w-[230px] thin-scrollbar transition delay-1000 duration-400 ease-in-out lg:w-1/5 z-10 h-screen py-2 px-6 bg-almost-black border-r shadow-md transform origin-top-right overflow-y-auto">
+                        <div class="flex justify-between items-center mb-8 ">
+                            <button class="side-navbar-close text-2xl text-white">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <a href="#">
+                                <div class="w-24">
+                                    <img src="Images/YouTube-White-Full-Color-Logo.wine.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <ul>
+                                <div class="border-b-[1px] border-neutral-800">
+                                    <li>
+                                        <a class="block  py-4 text-sm  text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-solid fa-house"></i> Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-solid fa-shuffle"></i>Shorts</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-solid fa-photo-film"></i>Subscriptions</a>
+                                    </li>
+                                </div>
+        
+                                <div class="border-b-[1px] border-neutral-800">
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-solid fa-circle-play"></i>Library</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6  fa-regular fa-clock"></i>History</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 text-red-500 fa-brands fa-square-youtube"></i>Your
+                                            videos</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-regular fa-clock"></i>History</a>
+                                    </li>
+        
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded border-b-[1px] border-neutral-800"
+                                            href="#"><i class="pr-6 fa-regular fa-thumbs-up"></i>Liked videos</a>
+                                    </li>
+                                </div>
+        
+                                <div class="border-b-[1px] border-neutral-800 text-white">
+                                    <h1 class="py-6">Explore</h1>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-regular fa-hourglass-half"></i>Trending</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-regular fa-circle-play"></i>Music</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-regular fa-chess-rook"></i>Gaming</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 fa-regular fa-newspaper"></i>News</a>
+                                    </li>
+        
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded border-b-[1px] border-neutral-800"
+                                            href="#"><i class="pr-6 fa-regular fa-futbol"></i>Sport</a>
+                                    </li>
+                                </div>
+        
+                                <div class="border-b-[1px] border-neutral-800 text-white">
+                                    <h1 class="py-6">More from YouTube</h1>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 brunch fa-brands fa-square-youtube"></i>YouTube
+                                            Premium</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 brunch fa-brands fa-square-youtube"></i>Creator
+                                            Studio</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 brunch fa-brands fa-square-youtube"></i>YouTube
+                                            Music</a>
+                                    </li>
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded"
+                                            href="#"><i class="pr-6 brunch fa-brands fa-square-youtube"></i>YouTube
+                                            Kids</a>
+                                    </li>
+        
+                                    <li>
+                                        <a class="block py-4 text-sm text-white hover:bg-stone-700 w-full hover:bg-rounded-lg px-2 focus:bg-neutral-900 rounded border-b-[1px] border-neutral-800"
+                                            href="#"><i class="pr-6 brunch fa-brands fa-square-youtube"></i>YouTube TV</a>
+                                    </li>
+                                </div>
+        
+                                <div class=" border-b-[1px] border-neutral-900">
+                                    <li class="">
+                                        <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded" href="#"><i
+lg                                           class="pr-6 fa-solid fa-gear"></i>Settings</a>
+                                    </li>
+        
+                                    <li class="">
+                                        <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded" href="#"><i
+lg                                           class="pr-6 fa-regular fa-flag"></i>Report and history</a>
+                                    </li>
+        
+                                    <li class="">
+                                        <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded" href="#"><i
+lg                                           class="pr-6 fa-regular fa-circle-question"></i>Help</a>
+                                    </li>
+        
+                                    <li class="">
+                                        <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded" href="#"><i
+lg                                           class="pr-6 fa-regular fa-pen-to-square"></i>Send feedback</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="text-neutral-400 text-sm py-6">
+                            <a href="#">About</a>
+                            <a href="#">Press</a>
+                            <a href="#">Copyright</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Creators</a>
+                            <a href="#">Advertise</a>
+                            <a href="#">Developers</a>
+                        </div>
+        
+                        <div class="text-neutral-400 text-sm py-6">
+                            <a href="#">Terms</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Policy & Safety</a>
+                            <a href="#">How YouTube works</a>
+                            <a href="#">Test new features</a>
+                        </div>
+        
+                        <p class="text-sm text-neutral-600">© 2023 Google LLC
+                        </p>
+                    </nav>
+                </div>
+
+                        <!-- videos -->
+                        <div class="mt-28 lg:ml-24 lg:mt-20 border-b-4 border-gray-300 border-opacity-75 pb-12">
+                            <h3 class="text-xl text-white font-bold">Recommended</h3>
+                            <div class="mt-4 grid sm:grid-cols-2 gap-x-4 gap-y-12 lg:grid-cols-4 row-gap-10 col-gap-2">
+                                
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/IMG-20200711-WA0006.jpg" alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden" >
+                                            <img src="Images/IMG-20200331-WA0009.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/IMG-20220222-WA0009.jpg" alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">The Shmoney Religion</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/Screenshot_20220518_133231_com.whatsapp.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">My sugar Mummy!!!!!</div>
+                                            <div class="text-xs text-white">
+                                                <p>We'll run to Canada</p>
+                                                <p>2 days ago &middot; 6m views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/IMG-20200711-WA0006.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/rexona.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">Layi_Wasabi</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/IMG-20200711-WA0006.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/IMG-20200711-WA0006.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-68">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                        <img src="Images/IMG-20200711-WA0006.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="flex mt-2">
+                                        <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-2">
+                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="text-xs text-white">
+                                                <p>Nerd for Nerds</p>
+                                                <p>2 days ago &middot; 87k views</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="mt-4 text-black mb-12 lg:ml-24 lg:mr-12">
+                            <h3 class="text-xl font-bold text-white">Latest Youtube posts</h3>
+                            <div class="mt-2 flex justify-between overflow-x-auto no-scrollbar gap-6">
+                                <div class="sm:w-92 bg-blue-700 flex flex-col px-3 py-2 rounded-lg border border-gray-800 pb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-blue-300 rounded-full overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg" alt="">
+                                        </div>
+                                        <div class="text-sm text-neutral-300 ml-2">
+                                            <p>Lorem ipsum &middot 6 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-3">
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis.
+                                        </p>
+                                        <div class="w-32 h-32 bg-gray-600 flex-shrink-0 overflow-hidden" class="object-cover">
+                                            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                                alt="" class="object-cover h-full">
+                                        </div>
+                                    </div>
+                
+                                    <div class="flex items-center justify-between text-sm text-white mt-3">
+                                        <div class="flex items-center">
+                                            <button><i class="material-icons small">thumb_up</i></button>
+                                            <div class="ml-1">179</div>
+                                            <button class="ml-2"><i class="material-icons small">thumb_down</i></button>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <button><i class="material-icons small">comment</i></button>
+                                            <div class="ml-1">24</div>
+                                            <button class="ml-3"><i class="material-icons small">
+                                                more_vert
+                                            </i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sm:w-92 bg-brunch flex flex-col px-3 py-2 rounded-lg border border-gray-800">
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-blue-300 rounded-full overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="text-sm text-white ml-2">
+                                            <p>Lorem ipsum &middot 6 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-3">
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis.
+                                        </p>
+                                        <div class="w-32 h-32 bg-gray-600 flex-shrink-0 overflow-hidden" class="object-cover">
+                                            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                                alt="" class="object-cover h-full">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between text-sm text-white mt-3">
+                                        <div class="flex items-center">
+                                            <button><i class="material-icons small">thumb_up</i></button>
+                                            <div class="ml-1">179</div>
+                                            <button class="ml-2"><i class="material-icons small">thumb_down</i></button>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <button><i class="material-icons small">comment</i></button>
+                                            <div class="ml-1">24</div>
+                                            <button class="ml-3"><i class="material-icons small">
+                                                    more_vert
+                                                </i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:w-92 bg-brunch flex flex-col px-3 py-2 rounded-lg border border-gray-800">
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-blue-300 rounded-full overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="text-sm text-white ml-2">
+                                            <p>Lorem ipsum &middot 6 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-3">
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis.
+                                        </p>
+                                        <div class="w-32 h-32 bg-gray-600 flex-shrink-0 overflow-hidden" class="object-cover">
+                                            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                                alt="" class="object-cover h-full">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between text-sm text-white mt-3">
+                                        <div class="flex items-center">
+                                            <button><i class="material-icons small">thumb_up</i></button>
+                                            <div class="ml-1">179</div>
+                                            <button class="ml-2"><i class="material-icons small">thumb_down</i></button>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <button><i class="material-icons small">comment</i></button>
+                                            <div class="ml-1">24</div>
+                                            <button class="ml-3"><i class="material-icons small">
+                                                    more_vert
+                                                </i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:w-92 bg-orange-600 flex flex-col px-3 py-2 rounded-lg border border-gray-800">
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-blue-300 rounded-full overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="text-sm text-white ml-2">
+                                            <p>Lorem ipsum &middot 6 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-3">
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis.
+                                        </p>
+                                        <div class="w-32 h-32 bg-gray-600 flex-shrink-0 overflow-hidden" class="object-cover">
+                                            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                                alt="" class="object-cover h-full">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between text-sm text-white mt-3">
+                                        <div class="flex items-center">
+                                            <button><i class="material-icons small">thumb_up</i></button>
+                                            <div class="ml-1">179</div>
+                                            <button class="ml-2"><i class="material-icons small">thumb_down</i></button>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <button><i class="material-icons small">comment</i></button>
+                                            <div class="ml-1">24</div>
+                                            <button class="ml-3"><i class="material-icons small">
+                                                    more_vert
+                                                </i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sm:w-92 bg-blue-700 flex flex-col px-3 py-2 rounded-lg border border-gray-800">
+                                    <div class="flex items-center">
+                                        <div class="w-6 h-6 bg-blue-300 rounded-full overflow-hidden">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="text-sm text-white ml-2">
+                                            <p>Lorem ipsum &middot 6 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex mt-3">
+                                        <p class="">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis.
+                                        </p>
+                                        <div class="w-32 h-32 bg-gray-600 flex-shrink-0 overflow-hidden" class="object-cover">
+                                            <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                                                alt="" class="object-cover h-full">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex items-center justify-between text-sm text-white mt-3">
+                                        <div class="flex items-center">
+                                            <button><i class="material-icons small">thumb_up</i></button>
+                                            <div class="ml-1">179</div>
+                                            <button class="ml-2"><i class="material-icons small">thumb_down</i></button>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <button><i class="material-icons small">comment</i></button>
+                                            <div class="ml-1">24</div>
+                                            <button class="ml-3"><i class="material-icons small">
+                                                    more_vert
+                                                </i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+        </nav>
+
+        <!-- nav menu -->
+        <div class="bg-almost-black">
+            <!-- nav menu for medium and large screens -->
+            <div class="right-navbar-menu relative z-50 hidden">
+                <div class="right-navbar-backdrop fixed inset-0 bg-zinc-800 opacity-25"></div>
+                <nav
+                    class="fixed top-5 right-20 rounded-lg flex flex-col w- z-10 h-[95%] py-6 px-6 bg-stone-800 border-r transform delay-300 transition-all duration-300 overflow-y-auto">
+
+                    <div>
+                        <ul>
+                            <div class="text-white">
+                                <li>
+                                    <a href="#"><i class=" bg-almost-black mb-8 p-2 rounded-full fa-regular fa-user"></i>
+                                        Sign in</a>
+                                </li>
+                            </div>
+                            <div class=" border-b-[1px] border-neutral-900 text-white">
+                                <li>
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-user"></i>Your channel</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-circle-play"></i>Youtube Studio</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-user"></i>Switch account</a>
+                                </li>
+                            </div>
+
+                            <div class=" border-b-[1px] border-neutral-900">
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-dollar-sign"></i>Purchases and
+                                        Memberships</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-user"></i>Your data in Youtube</a>
+                                </li>
+                            </div>
+
+                            <div class=" border-b-[1px] border-neutral-900">
+                                <li class="">
+                                    <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#">
+                                        <div>
+                                            <i class="fa-regular fa-moon pr-4"></i> Appearance: Device theme
+                                        </div>
+                                        <p>></p>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#">
+                                        <div>
+                                            <i class="fa-regular fa-sun pr-4"></i> Language: English
+                                        </div>
+                                        <p>></p>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#">
+                                        <div>
+                                            <i class="fa-regular fa-id-badge pr-4"></i> Restricted Mode: Off
+                                        </div>
+                                        <p>></p>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#">
+                                        <div>
+                                            <i class="fa-regular fa-map pr-4"></i> Location: Nigeria
+                                        </div>
+                                        <p>></p>
+                                    </a>
+                                </li>
+                            </div>
+
+                            <div class=" border-b-[1px] border-neutral-900">
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-gear"></i>Settings</a>
+                                </li>
+                            </div>
+
+                            <div class=" border-b-[1px] border-neutral-900">
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-circle-question"></i> Help</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-comment"></i>Send feedback</a>
+                                </li>
+                            </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- nav menu for phone screen -->
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav
+                    class="fixed top-0 bottom-0 flex flex-col w-full z-10 h-screen py-2 px-4 bg-almost-black border-r transform delay-300 transition-all duration-300 overflow-y-auto">
+                    <div class="flex items-center mb-4 ">
+                        <button class="navbar-close">
+                            <i class="text-white text-3xl fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="text-white flex justify-between hover:bg-stone-700">
+                lg    <div class="flex gap-x-2 text-sm">
+                                <div>
+                                    <i class=" px-2 text-blue-500 text-3xl fa-solid fa-circle-user"></i>
+                                </div>
+
+                                <div>
+                                    <p>Sign in</p>
+                                    <p>Manage Google Account</p>
+                                </div>
+                            </div>
+                            <p class="items-center text-3xl">></p>
+                        </div>
+                        <ul>
+                            <div class=" border-b-[1px] border-neutral-900">
+                                <li>
+                                    <a class="block px-2 py-2 text-sm   text-neutral-500 hover:bg-stone-700  rounded"
+        lg                        href="#"><i class="pr-4 fa-regular fa-user"></i>Your channel</a>
+                                </li>
+                                <li>
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-lock"></i>Turn on incognito</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-user-plus"></i>Add account</a>
+                                </li>
+                            </div>
+
+                            <div>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-brands fa-youtube"></i>Get YouTube Premium</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-dollar-sign"></i>Purchases and
+                                        membership</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-chart-simple"></i>Time watched</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded border-b-[1px] blgder-neutral-900"
+                                        href="#"><i class="pr-4 fa-solid fa-user-tie"></i>Your data in YouTube</a>
+                                </li>
+                            </div>
+
+                            <div class=" border-b-[1px] border-neutral-900">
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-solid fa-gear"></i>Settings</a>
+                                </li>
+
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 fa-regular fa-circle-question"></i>Help & feedback</a>
+                                </li>
+                            </div>
+
+                            <div>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>YouTube
+                                        Studio</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>Youtube
+                                        Music</a>
+                                </li>
+                                <li class="">
+                                    <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
+            lg                       href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>YouTube
+                                        Kids</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="flex fixed inset-x-0 bottom-0 justify-center text-white gap-x-2 text-sm items-center">
+                        <a class="" href="#">Privacy Policy</a>
+                        <p class="">.</p>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+</div>
+
+<footer>
+    <div>
+        <div class="flex sm:hidden text-white justify-between fixed inset-x-0 bottom-0 p-2 bg-almost-black text-center">
+            <div>
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <p class="text-sm">Home</p>
+            </div>
+            <div>
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                <p class="text-sm">Shorts</p>
+            </div>
+            <div>
+                <a href="#"><i class="border rounded-full p-2 fa-solid fa-plus"></i></a>
+            </div>
+            <div>
+                <a href="#"><i class="fa-solid fa-photo-film"></i></a>
+                <p class="text-sm">Subscriptions</p>
+            </div>
+
+            <div>
+                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                <p class="text-sm">Library</p>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</footer>
+
+
+
+
+<script src="./index.js"></script>
+</body>
+
+</html>
