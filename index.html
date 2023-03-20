@@ -1,4 +1,11 @@
 <!doctype html>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+<!doctype html>
 <div>
 
     <head>
@@ -10,55 +17,135 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     </head>
+    </head>
 
     <body class="bg-almost-black thin-scrollbar">
-        <nav class="">
-            <header class="fixed w-full top-0 z-10 lg:pl-20 bg-almost-black sm:pl-8 sm:pr-8 pb-2 px-2 lg:pr-8 pt-2 items-center" id="header">
-            <div class="flex justify-between sm:pl-[35px] lg:pl-2">
-                <div class="w-24 pt-2">
-                    <img src="Images/YouTube-White-Full-Color-Logo.wine.png" alt="">
+            <header class="fixed w-full top-0 bg-almost-black p-2 sm:p-0  items-center">
+                <div>
+
+                <!-- for phone screen -->
+                <div id="header" class="flex justify-between items-center sm:hidden">
+                    <div id="div1" class=" flex justify-between items-center w-full">
+                    <div class="w-24 ">
+                        <img src="Images/YouTube-White-Full-Color-Logo.wine.png" alt="">
+                    </div>
+
+                    <div class="flex gap-x-6 text-white px-2 items-center">
+                        <div class="text-white"><a href="#"><i class="fa-solid fa-display"></i></a></div>
+                        <a href="#"><i class="fa-regular fa-bell"></i></a>
+                        <button id="toggle-button"><i class="toggle-button fa-solid fa-magnifying-glass"></i></button>
+                        <a class="" href="#"><i
+                        class="navbar-burger bg-neutral-600 p-2 rounded-full fa-regular fa-user"></i></a>
+                    </div>                        
+                    </div>
+
+                    <div id="div2" class="hidden justify-center items-center text-white w-full text-center flex gap-x-2">
+                        <i id="takeback" class="fa-regular fa-circle-left bg-stone-800 p-3  hover:bg-stone-700 hover:rounded-full duration-300"></i>
+                        <div class="w-full items-center flex">
+                            <label for="search" class="sr-only">Search</label>
+                            <input
+                            id="search2"
+                                class="border border-neutral-600 bg-almost-black w-full h-10 px-5  rounded-full text-sm text-white focus:outline-none"
+                                type="text" name="search" placeholder="Search">
+                            <button type="submit" class=" ml-[-70px]">
+                                <a class="border border-neutral-600 text-gray-300 bg-neutral-600 pt-[10px] pb-[10.5px] px-[27px] rounded-r-full"
+                                    href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </button>                    
+                        </div>
+        
+                        <a class=" bg-stone-800 p-3  hover:bg-stone-700 hover:rounded-full duration-300" href="#">
+                            <img class="w-[12px]"
+                                src="Images/microphone.png" alt="">
+                            </a>
+                    </div>
+
+                </div>
+                <!-- laptop-screen -->
+                <div class="hidden lg:flex ml-20 mt-[-10px] bg-almost-black justify-between items-center">
+                    <div class="w-[10%]">
+                        <img class="w-24" src="Images/YouTube-White-Full-Color-Logo.wine.png" alt="">
+                    </div>
+                    <div class="w-[60%] items-center flex">
+                        <label for="search" class="sr-only">Search</label>
+                        <input
+                        id="search"
+                            class="border border-neutral-600 bg-almost-black w-full h-10 px-5  rounded-full text-sm text-white focus:outline-none"
+                            type="text" name="search" placeholder="Search">
+                        <button type="submit" class=" ml-[-70px]">
+                            <a class="border border-neutral-600 text-gray-300 bg-neutral-600 pt-[10px] pb-[10.5px] px-[27px] rounded-r-full"
+                                href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </button>
+                        <a class="bg-stone-800 rounded-full m-4 p-3 hover:bg-stone-700 duration-300" href="#"><img class="w-[12px]"
+                            src="Images/microphone.png" alt=""></a>                   
+                        </div>
+
+                    <div class="flex justify-between items-center w-[10%] text-white">
+                        <div class="text-white p-2 hover:bg-stone-700 hover:rounded-full duration-300">
+                            <a href="#"><img class="w-12" src="images/camera.png" alt="img"></a>
+                        </div>
+                            <a href="#"><i class="fa-regular fa-bell p-3 hover:bg-stone-700 hover:rounded-full duration-300"></i></a>
+                            <a class="" href="#"><i
+                            class="right-navbar-burger bg-neutral-600 p-3 rounded-full fa-regular fa-user"></i></a>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="hidden md:flex justify-center items-center text-white w-full text-center">
-                    <input
-                        id="searchBar"
-                        class="border border-neutral-600 bg-almost-black w-2/3 h-10 px-5 pr-16  rounded-full text-sm focus:outline-none"
-                        type="search" name="search" placeholder="Search">
-                    <button type="submit" class="mt- mr-4">
-                        <a class="ml-[-72px] border border-neutral-600 text-gray-300 bg-neutral-600 py-[9.5px] px-[27px] rounded-r-full"
-                            href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </button>
-                    <a class="rounded-full bg-stone-800 py-2 px-3 p-2 hover:bg-stone-700 hover:rounded-full duration-300" href="#">
-                        <img class="w-[12px]"
-                            src="Images/microphone.png" alt="">
-                        </a>
-                </div>
-                <!-- for phone screen -->
-                <div class="flex sm:hidden gap-x-6 text-white px-2 items-center">
-                    <div class="text-white"><a href="#"><i class="fa-solid fa-display"></i></a></div>
-                    <a href="#"><i class="fa-regular fa-bell"></i></a>
-                    <a class="" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a class="" href="#"><i
-                    class="navbar-burger bg-neutral-600 p-2 rounded-full fa-regular fa-user"></i></a>
-                </div>
-                <!-- for medium/large screen -->
-                <div class="hidden sm:flex gap-x-4 text-white px-2 items-center">
-                    <a class="lg:hidden" href="#"><i class="fa-solid fa-magnifying-glass p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i></a>
-                    <a class="bg-stone-800 py-2 px-3 lg:hidden p-2 hover:bg-stone-700 hover:rounded-full duration-300" href="#"><img class="w-[12px]"
-                            src="Images/microphone.png" alt=""></a>
-                    <div class="text-white p-2 hover:bg-stone-700 hover:rounded-full duration-300">
-                    <a href="#"><img class="w-6 lg:w-12" src="images/camera.png" alt="img"></a>
+                <!-- tablet screen -->
+                <div class="hidden sm:flex lg:hidden justify-between items-center w-full">
+                    <div id="div3" class="flex justify-between w-full">
+                        <div class="text-white p-2 flex justify-between gap-x-6">
+                            <button id="hamburger" class="side-navbar-burger text-2xl">
+                                <i class="fa-solid fa-bars p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i>
+                            </button>
+
+                        <div class="w-24 pt-3">
+                            <img src="Images/YouTube-White-Full-Color-Logo.wine.png" alt="">
+                        </div>
+                        </div>
+        
+
+
+                        <div class="flex gap-x-4 text-white px-2 items-center">          
+                        <button id="toggle-button2" class="toggle-button"><i class="fa-solid fa-magnifying-glass p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i></button>
+                        <a class="bg-stone-800 py-2 px-3 lg:hidden p-2 hover:bg-stone-700 duration-300" href="#"><img class="w-[12px]"
+                                src="Images/microphone.png" alt=""></a>
+                        <div class="text-white p-2 hover:bg-stone-700 hover:rounded-full duration-300">
+                        <a href="#"><img class="w-6 lg:w-12" src="images/camera.png" alt="img"></a>
+                        </div>
+                        <a href="#"><i class="fa-regular fa-bell p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i></a>
+                        <a class="" href="#"><i class="right-navbar-burger bg-neutral-600 p-2 rounded-full fa-regular fa-user"></i></a>
                     </div>
-                    <a href="#"><i class="fa-regular fa-bell p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i></a>
-                    <a class="" href="#"><i
-                    class="right-navbar-burger bg-neutral-600 p-2 rounded-full fa-regular fa-user"></i></a>
+                    </div>
+
+                    <div id="div4" class="hidden justify-center items-center text-white w-full text-center flex gap-x-2">
+                        <i id="takeback2" class="fa-regular fa-circle-left bg-stone-800 p-3  hover:bg-stone-700 hover:rounded-full duration-300"></i>
+                        <div class="w-full items-center flex">
+                            <label for="search" class="sr-only">Search</label>
+                            <input
+                            id="search3"
+                                class="border border-neutral-600 bg-almost-black w-full h-10 px-5  rounded-full text-sm text-white focus:outline-none"
+                                type="text" name="search" placeholder="Search">
+                            <button type="submit" class=" ml-[-70px]">
+                                <a class="border border-neutral-600 text-gray-300 bg-neutral-600 pt-[10px] pb-[10.5px] px-[27px] rounded-r-full"
+                                    href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </button>                    
+                        </div>
+        
+                        <a class=" bg-stone-800 p-3  hover:bg-stone-700 hover:rounded-full duration-300" href="#">
+                            <img class="w-[12px]"
+                                src="Images/microphone.png" alt="">
+                            </a>
+                    </div>
+                </div>                    
                 </div>
-            </div>
+
+
 
             <!-- slide bar -->
-            <div>
+            <div id="header" class="sm:sticky sm:top-[40px] lg:top-[60px] bg-almost-black lg:pl-20 lg:mr-12 px-6">
                 <div class="flex justify-between items-center gap-x-2 overflow-x-auto no-scrollbar 
-                text-white sm:pl-8 pt-5 px-2 lg:mr-8 lg:mr-20 text-sm font-bold text-white">
+                text-white mt-12 py-2 sm:pl-8 text-sm font-bold text-white">
 
                     <a href="#florence" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Florence</a>
                     <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Psquare</a>
@@ -66,7 +153,7 @@
                     <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
                     <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
                     <a href="#florence" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Florence</a>
-                    <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300 grow">Javascript</a>
+                    <a href="#p-square" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black flex hover:bg-stone-700 duration-300 grow">Javascript</a>
                     <a href="#comedy" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Comedy</a>
                     <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
                     <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
@@ -79,12 +166,14 @@
                     <a href="#comedy" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Comedy</a>
                     <a href="#asake" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Asake</a>
                     <a href="#music" class="bg-stone-800 rounded-lg p-2 active:bg-almost-black active:text-black hover:bg-stone-700 duration-300">Music</a>
-                </div>
+                </div>                
             </div>
 
-            <div class="bg-almost-black">
-                <div class="hidden sm:flex flex-col gap-y-6 text-center fixed top-0 left-0 text-white pt-1 px-2">
-                    <div class="">
+        </header>
+
+            <div class="">
+                <div class="hidden md:flex flex-col gap-y-6 text-center fixed top-2 left-0 text-white bg-almost-black">
+                    <div class="text-white hidden md:block">
                         <button id="hamburger" class="side-navbar-burger text-2xl">
                             <i class="fa-solid fa-bars p-2 hover:bg-stone-700 hover:rounded-full duration-300"></i>
                         </button>
@@ -111,16 +200,10 @@
                             <p class="text-sm">Library</p>
                         </div>
                     </div>                
-            </header>
-
-        
+       
                 </div>
                 <div class="side-navbar-menu relative z-50 hidden">
-                    <div class="side-navbar-backdrop fixed inset-0 bg-gray-800 opacity-25">
-                        
-                    </div>
-                    <nav
-                        
+                    <nav                         
                         class="fixed top-0 left-0 bottom-0 flex flex-col sm:w-[230px] thin-scrollbar transition delay-1000 duration-400 ease-in-out lg:w-1/5 z-10 h-screen py-2 px-6 bg-almost-black border-r shadow-md transform origin-top-right overflow-y-auto">
                         <div class="flex justify-between items-center mb-8 ">
                             <button class="side-navbar-close text-2xl text-white">
@@ -275,30 +358,33 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                 </div>
 
                         <!-- videos -->
-                        <div class="mt-28 lg:ml-24 lg:mt-20 border-b-4 border-gray-300 border-opacity-75 pb-12">
-                            <h3 class="text-xl text-white font-bold">Recommended</h3>
-                            <div class="mt-4 grid sm:grid-cols-2 gap-x-4 gap-y-12 lg:grid-cols-4 row-gap-10 col-gap-2">
+                        <div class="lg:mt-12 lg:ml-24  border-b-4 border-gray-300 border-opacity-75 pb-12">
+                            <h3 class="hidden sm:block text-xl text-white font-bold ">Recommended</h3>
+                            <div id="videoCardsContainer" class="mt-4 grid sm:grid-cols-2 gap-x-4 gap-y-12 lg:grid-cols-4 row-gap-10 col-gap-2">
                                 
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
-                                        <img src="Images/IMG-20200711-WA0006.jpg" alt="">
+                                <a href="yong.html">
+                                <div class="videoCard " data-id="video-card-1">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
+                                        <img src="Images/mrIbu.webp" class="h-full w-full object-cover" alt="">
                                     </div>
                                     <div class="flex mt-2">
                                         <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden" >
-                                            <img src="Images/IMG-20200331-WA0009.jpg" alt="">
+                                            <img src="Images/IMG-20200331-WA0009.jpg"  alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
-                                            <div class="text-xs text-white">
-                                                <p>Nerd for Nerds</p>
+                                            <div class="titles text-sm font-bold text-white">Mr Ibu and sons</div>
+                                            <div class="description text-xs text-white">
+                                                <p>funny nollywood</p>
                                                 <p>2 days ago &middot; 87k views</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
-                                        <img src="Images/IMG-20220222-WA0009.jpg" alt="">
+                                </div>                                    
+                                </a>
+                                <a href="micheal.html">
+                                <div class="videoCard " data-id="video-card-2">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
+                                        <img src="Images/michael-performance.jpeg" alt="">
                                     </div>
                                     <div class="flex mt-2">
                                         <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0 overflow-hidden">
@@ -306,17 +392,19 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">The Shmoney Religion</div>
-                                            <div class="text-xs text-white">
-                                                <p>Nerd for Nerds</p>
-                                                <p>2 days ago &middot; 87k views</p>
+                                            <div class="titles text-sm font-bold text-white">All Micheal did was stood there</div>
+                                            <div class="description text-xs text-white">
+                                                <p>Replay for Show</p>
+                                                <p>2 years ago &middot; 2.9M views</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
-                                        <img src="Images/Screenshot_20220518_133231_com.whatsapp.jpg"
+                                </div>                                    
+                                </a>
+                                <a href="opzy.html">
+                                <div class="videoCard " data-id="video-card-3">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
+                                        <img src="Images/opzy.jfif"
                                             alt="">
                                     </div>
                                     <div class="flex mt-2">
@@ -325,16 +413,19 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">My sugar Mummy!!!!!</div>
-                                            <div class="text-xs text-white">
-                                                <p>We'll run to Canada</p>
-                                                <p>2 days ago &middot; 6m views</p>
+                                            <div class="titles text-sm font-bold text-white">Opzzi Indriza</div>
+                                            <div class="description text-xs text-white">
+                                                <p>o fe da mi loro!</p>
+                                                <p>2 months ago &middot; 6K views</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                </div>                                    
+                                </a>
+
+
+                                <div class="videoCard " data-id="video-card-4">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
                                         <img src="Images/IMG-20200711-WA0006.jpg"
                                             alt="">
                                     </div>
@@ -344,16 +435,16 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
-                                            <div class="text-xs text-white">
+                                            <div class="titles text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="description text-xs text-white">
                                                 <p>Nerd for Nerds</p>
                                                 <p>2 days ago &middot; 87k views</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                <div class="videoCard " data-id="video-card-5">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
                                         <img src="Images/rexona.jpg"
                                             alt="">
                                     </div>
@@ -363,16 +454,16 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">Layi_Wasabi</div>
-                                            <div class="text-xs text-white">
+                                            <div class="titles text-sm font-bold text-white">Layi_Wasabi</div>
+                                            <div class="description text-xs text-white">
                                                 <p>Nerd for Nerds</p>
                                                 <p>2 days ago &middot; 87k views</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                <div class="videoCard " data-id="video-card-6">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
                                         <img src="Images/IMG-20200711-WA0006.jpg"
                                             alt="">
                                     </div>
@@ -382,16 +473,16 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
-                                            <div class="text-xs text-white">
+                                            <div class="titles text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="description text-xs text-white">
                                                 <p>Nerd for Nerds</p>
                                                 <p>2 days ago &middot; 87k views</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                <div class="videoCard " data-id="video-card-7">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
                                         <img src="Images/IMG-20200711-WA0006.jpg"
                                             alt="">
                                     </div>
@@ -401,16 +492,16 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
-                                            <div class="text-xs text-white">
+                                            <div class="titles text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="description text-xs text-white">
                                                 <p>Nerd for Nerds</p>
                                                 <p>2 days ago &middot; 87k views</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sm:w-68">
-                                    <div class="h-40 w-full bg-gray-700 overflow-hidden">
+                                <div class="videoCard " data-id="video-card-8">
+                                    <div class="h-40 w-full bg-gray-700 overflow-hidden rounded-lg">
                                         <img src="Images/IMG-20200711-WA0006.jpg"
                                             alt="">
                                     </div>
@@ -420,8 +511,8 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                                                 alt="">
                                         </div>
                                         <div class="ml-2">
-                                            <div class="text-sm font-bold text-white">Cute little Zoe</div>
-                                            <div class="text-xs text-white">
+                                            <div class="titles text-sm font-bold text-white">Cute little Zoe</div>
+                                            <div class="description text-xs text-white">
                                                 <p>Nerd for Nerds</p>
                                                 <p>2 days ago &middot; 87k views</p>
                                             </div>
@@ -614,7 +705,6 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                             </div>
                             
                         </div>
-        </nav>
 
         <!-- nav menu -->
         <div class="bg-almost-black">
@@ -635,34 +725,34 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                             <div class=" border-b-[1px] border-neutral-900 text-white">
                                 <li>
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-user"></i>Your channel</a>
+                                   href="#"><i class="pr-4 fa-regular fa-user"></i>Your channel</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-circle-play"></i>Youtube Studio</a>
+                                   href="#"><i class="pr-4 fa-regular fa-circle-play"></i>Youtube Studio</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-user"></i>Switch account</a>
+                                   href="#"><i class="pr-4 fa-regular fa-user"></i>Switch account</a>
                                 </li>
                             </div>
 
                             <div class=" border-b-[1px] border-neutral-900">
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-dollar-sign"></i>Purchases and
+                                   href="#"><i class="pr-4 fa-solid fa-dollar-sign"></i>Purchases and
                                         Memberships</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-user"></i>Your data in Youtube</a>
+                                   href="#"><i class="pr-4 fa-regular fa-user"></i>Your data in Youtube</a>
                                 </li>
                             </div>
 
                             <div class=" border-b-[1px] border-neutral-900">
                                 <li class="">
                                     <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#">
+                                   href="#">
                                         <div>
                                             <i class="fa-regular fa-moon pr-4"></i> Appearance: Device theme
                                         </div>
@@ -672,7 +762,7 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
 
                                 <li class="">
                                     <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#">
+                                   href="#">
                                         <div>
                                             <i class="fa-regular fa-sun pr-4"></i> Language: English
                                         </div>
@@ -682,7 +772,7 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
 
                                 <li class="">
                                     <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#">
+                                   href="#">
                                         <div>
                                             <i class="fa-regular fa-id-badge pr-4"></i> Restricted Mode: Off
                                         </div>
@@ -692,7 +782,7 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
 
                                 <li class="">
                                     <a class="flex justify-between px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#">
+                                   href="#">
                                         <div>
                                             <i class="fa-regular fa-map pr-4"></i> Location: Nigeria
                                         </div>
@@ -704,18 +794,18 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                             <div class=" border-b-[1px] border-neutral-900">
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-gear"></i>Settings</a>
+                                   href="#"><i class="pr-4 fa-solid fa-gear"></i>Settings</a>
                                 </li>
                             </div>
 
                             <div class=" border-b-[1px] border-neutral-900">
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-circle-question"></i> Help</a>
+                                   href="#"><i class="pr-4 fa-regular fa-circle-question"></i> Help</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-comment"></i>Send feedback</a>
+                                   href="#"><i class="pr-4 fa-regular fa-comment"></i>Send feedback</a>
                                 </li>
                             </div>
                     </div>
@@ -734,7 +824,7 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                     </div>
                     <div>
                         <div class="text-white flex justify-between hover:bg-stone-700">
-                lg    <div class="flex gap-x-2 text-sm">
+                    <div class="flex gap-x-2 text-sm">
                                 <div>
                                     <i class=" px-2 text-blue-500 text-3xl fa-solid fa-circle-user"></i>
                                 </div>
@@ -750,31 +840,31 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                             <div class=" border-b-[1px] border-neutral-900">
                                 <li>
                                     <a class="block px-2 py-2 text-sm   text-neutral-500 hover:bg-stone-700  rounded"
-        lg                        href="#"><i class="pr-4 fa-regular fa-user"></i>Your channel</a>
+                                href="#"><i class="pr-4 fa-regular fa-user"></i>Your channel</a>
                                 </li>
                                 <li>
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-lock"></i>Turn on incognito</a>
+                                   href="#"><i class="pr-4 fa-solid fa-lock"></i>Turn on incognito</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-user-plus"></i>Add account</a>
+                                   href="#"><i class="pr-4 fa-solid fa-user-plus"></i>Add account</a>
                                 </li>
                             </div>
 
                             <div>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-brands fa-youtube"></i>Get YouTube Premium</a>
+                                   href="#"><i class="pr-4 fa-brands fa-youtube"></i>Get YouTube Premium</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-dollar-sign"></i>Purchases and
+                                   href="#"><i class="pr-4 fa-solid fa-dollar-sign"></i>Purchases and
                                         membership</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-chart-simple"></i>Time watched</a>
+                                   href="#"><i class="pr-4 fa-solid fa-chart-simple"></i>Time watched</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded border-b-[1px] blgder-neutral-900"
@@ -785,29 +875,29 @@ lg                                           class="pr-6 fa-regular fa-pen-to-sq
                             <div class=" border-b-[1px] border-neutral-900">
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-solid fa-gear"></i>Settings</a>
+                                   href="#"><i class="pr-4 fa-solid fa-gear"></i>Settings</a>
                                 </li>
 
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-white hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 fa-regular fa-circle-question"></i>Help & feedback</a>
+                                   href="#"><i class="pr-4 fa-regular fa-circle-question"></i>Help & feedback</a>
                                 </li>
                             </div>
 
                             <div>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>YouTube
+                                   href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>YouTube
                                         Studio</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>Youtube
+                                   href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>Youtube
                                         Music</a>
                                 </li>
                                 <li class="">
                                     <a class="block px-2 py-2 text-sm text-neutral-500 hover:bg-stone-700 rounded"
-            lg                       href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>YouTube
+                                    href="#"><i class="pr-4 text-red-500 fa-brands fa-square-youtube"></i>YouTube
                                         Kids</a>
                                 </li>
                             </div>

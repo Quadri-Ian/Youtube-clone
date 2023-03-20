@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    screens: {
+      ts: '375px',
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px'
+    },
+
     fontSize: {
       lt: '0.5rem',
       st: '0.7rem',
@@ -13,13 +21,6 @@ module.exports = {
       '4xl': '2.441rem',
       '5xl': '3.052rem',
     },
-    screens: {
-      ts: '375px',
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px'
-    },
     extend: {
       fontFamily: {
         'Roboto': ['Roboto', 'Arial', 'sans-serif']
@@ -27,6 +28,7 @@ module.exports = {
       colors: {
         'almost-black': '#121212',
         'brunch': '#F00000',
+        'light-gray': '#b0b0b0',
       },
       spacing: {
         '11': '-240px',
@@ -39,5 +41,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-
